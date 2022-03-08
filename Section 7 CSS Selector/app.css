@@ -15,12 +15,23 @@ a:hover{
     text-decoration: underline;
 }
 
+
+
+.post:nth-of-type(3n){
+    background-color: #5390d9;
+}
+
+h1::first-letter,p::first-letter{
+    font-size: 48px;
+    color: #480ca8;
+}
+
 .post button:hover{
     background-color: #edf6f9;
     color: #f8edeb;
     
 }
 
-.post:nth-of-type(3n){
-    background-color: #5390d9;
+button:hover{
+    background-color: olive;
 }
