@@ -1,0 +1,25 @@
+#one {
+    background-color: #ae2012;
+    border-width: 5px;
+    border-color:black;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+#two {
+    background-color: #0077b6;
+    border-color:aqua;
+    border-width: 3px;
+    border-style: dashed dotted;
+
+}
+
+#three {
+    background-color: #f1c0e8;
+    border: 5px dashed yellow
+}
+
+div {
+    width: 200px;
+    height:160px
+}
