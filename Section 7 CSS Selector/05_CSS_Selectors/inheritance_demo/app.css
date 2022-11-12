@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     color: purple;
 }
@@ -12,4 +13,20 @@ form {
 
 button, input {
     color: inherit;
+=======
+body {
+    color: purple;
+}
+
+section {
+    color: aqua;
+}
+
+form {
+    color: greenyellow;
+}
+
+button, input {
+    color: inherit;
+>>>>>>> fa8167f36584f4d021160bd32bd893d97b18c3b4
 }
