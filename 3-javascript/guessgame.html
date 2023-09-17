@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game JS</title>
+</head>
+
+<body>
+    <p>How Many fingers am I holding in my hand</p>
+    <input type="text" id="how-many-fingers">
+    <button id="make-your-guess">Guess</button>
+
+    <script>
+        var inputValue = document.getElementById("how-many-fingers");
+        var numberOfFingers = Math.random() * 5;
+        console.log(numberOfFingers);
+        document.getElementById("make-your-guess").onclick = function () {
+            var roundNumber = Math.floor(numberOfFingers);
+            if ( roundNumber == inputValue.value ) {
+                console.log(roundNumber);
+                alert("YOSHOOOOOO you guessed right " + roundNumber);
+            } else {
+                alert("You guessed wrong the number is " + roundNumber);
+                console.log(roundNumber);
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

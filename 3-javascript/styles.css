@@ -1,0 +1,35 @@
+div {
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+div .circle-position {
+    display: inline-block
+}
+
+.button-position{
+    width: 345px;
+    margin-left: 45px;
+}
+
+.button-position button {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+#red-circle {
+    
+    background-color: red;
+}
+
+#blue-circle {
+    
+    background-color: blue;
+}
+
+#green-circle {
+    background-color: green;
+}

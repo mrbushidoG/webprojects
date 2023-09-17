@@ -2,58 +2,68 @@ body {
     background-color: #ff8fab;
 }
 
-.navigation{
+.navigation {
     background-color: #03045e;
     color: white;
     font-size: 150%;
     display: flex;
     flex-direction: row;
-    padding-left: 38%;
-    
+    /*padding-left: 38%; - this is not what you want. it will not keep the navigation items centered. Since you are using disply:flex; you can use the justify-content to tell the items inside the container to how to you want them to be justified, in your case centered.*/
+    justify-content: center;
+
 }
 
 .navigation p {
-    text-align: center;
+    /*  now that you are properly centering the items of the flex contained by using justify-content: center;, setting text-align:center on the p tags is a bit redundant. It will not effect them, and the browser has to parse the extra styling for no reason. this can be removed.    */
+    /*     text-align: center; */
+
+    /*  this is ok, but your last item will also have a margin-right of 25px, causing your items to not actually be truly centerd. see if you can figure out a way to select just the last item and remove the margin so that the items are truly centered on the page, or maybe there is another way entirely that you can use to space the items without effecting the centering???  */
     margin-right: 25px;
 
 }
 
-.navigation p, a{
+/* while this works, understand that these are 2 separate selectors all p tags inside the element with a class of navigation, and all the a tags on the page */
+a {
     text-decoration: none;
     color: white;
 }
 
-.profile-image img, h3{
+/* why not give the img tag a class and target that specifically, again, css selector specificity. it's important. */
+.image-section
+{
     width: 500px;
     height: 400px;
     border-radius: 50%;
     display: flex;
     flex-direction: row;
-    margin:auto;
+    margin: auto;
     margin-top: 100px;
 }
 
-.profile-image>h3{
+.profile-image>h3 {
     font-size: 23px;
+    text-align: center;
 }
 
-.profile-box{
+.profile-box {
     width: 1109px;
     height: 537px;
     background-color: white;
     margin: auto;
-    box-shadow: 134px;
-    box-shadow: 12px 12px #fca311;
+    /*  what is the goal here? this is wrong. it's not how mutiple box-shadows are applied if that is what you are going for.  */
+    box-shadow: 28px 2px #fca311;
 }
 
-.profile-box,.profile-text,.about-me, h3 {
+.profile-box,
+.profile-text,
+.about-me,
+h3 {
     font-size: 38px;
 }
 
-.profile-box,.profile-text,.about-me p {
+/* .about-me p, is nto a valid selector for the markup you have on this page. it will do nothing. */
+.profile-box,
+.profile-text,
+.about-me p {
     font-size: 16px;
 }
-
-
-
-

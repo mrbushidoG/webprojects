@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Statement JS</title>
+</head>
+
+<body>
+    <label for="magic-word">What is the magic word</label>
+    <input type="text" id="magic-word">
+    <button id="guess-button">Try your luck</button>
+
+    <script>
+        var magic_word = "businessman";
+        document.getElementById("guess-button").onclick = function () {
+            if (document.getElementById("magic-word").value == magic_word) {
+                alert("You've guessed the magic word righ");
+            } else {
+                alert("Sorry, your guess was wrong");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop JS</title>
+</head>
+
+<body>
+    <p>Enter the number of fingers you are holding for the computer to make a guess</p>
+    <select name="" id="myNumber">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <button id="guess">Guess</button>
+    <div id="theFingerWeHolding"></div>
+    <div id="computerGuess"></div>
+    <div id="howManyGuesses"></div>
+    <div id="showAttempts"></div>
+
+
+    <script>
+
+        var humanFinger = document.getElementById("myNumber");
+        var numberOfGuesses = 1;
+        var showMeGuess = "";
+
+
+
+        document.getElementById("guess").onclick = function () {
+            var flag = true;
+
+            document.getElementById("theFingerWeHolding").innerHTML = "<p> Number of fingers I'm Holding " + humanFinger.value + "</p>";
+            console.log(humanFinger.value)
+            while (flag) {
+                var ComputerGuesses = Math.random();
+                ComputerGuesses = ComputerGuesses * 10;
+                ComputerGuesses = Math.floor(ComputerGuesses);
+                showMeGuess = showMeGuess + '<p> The Computer Guessed ' + ComputerGuesses + '</p>';
+                document.getElementById("computerGuess").innerHTML = showMeGuess;
+                if (ComputerGuesses == humanFinger.value) {
+                    document.getElementById("computerGuess").innerHTML = "YOSHOO!!! you guessed right";
+                    
+                    alert("Your guess is right");
+                    flag = false;
+                } else {
+                    // document.getElementById("showAttempts").innerHTML = '<p>Wrong Guess</p>';      
+                    numberOfGuesses++;
+                }
+                document.getElementById("computerGuess").innerHTML = showMeGuess;
+            }
+            document.getElementById("howManyGuesses").innerHTML = "<p>Total Number of guesses is " + numberOfGuesses + "</p>";
+            
+
+
+
+
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

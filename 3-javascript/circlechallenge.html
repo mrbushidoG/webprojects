@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Circle Challenge</title>
+</head>
+
+<body>
+
+    <div id="red-circle"></div>
+    <div id="blue-circle"></div>
+    <div id="green-circle"></div>
+    <br><br><br>
+    <div class="button-position">
+        <button id="redcircle">Red Circle</button>
+        <button id="bluecircle">Blue Circle</button>
+        <button id="greencircle">Green Circle</button>
+    </div>
+    <script>
+        document.getElementById("redcircle").onclick = function(){
+            document.getElementById("red-circle").style.visibility="hidden";
+        }
+        document.getElementById("bluecircle").onclick = function(){
+            document.getElementById("blue-circle").style.visibility="hidden";
+        }
+        document.getElementById("greencircle").onclick = function(){
+            document.getElementById("green-circle").style.visibility="hidden";
+        }
+    </script>
+</body>
+
+</html>

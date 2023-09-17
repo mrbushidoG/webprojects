@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function JS</title>
+</head>
+<body>
+    <div id="loop-names"></div>
+
+    <script>
+        function loopingThroughNames(namesArray){
+            var showName = "";
+            for (let i = 0; i < namesArray.length; i++) {
+                // showName = showName + '<p>' + namesArray[i] + '</p>';
+                document.getElementById("loop-names").innerHTML += '<p>' + namesArray[i] + '</p>';    
+            }
+            
+        }
+
+        names_list = ["Ahmed","Abdallah","Ryu","Bu Yousef","Al Tunaiji","Johnny","Bruce Wayne","Joker","Two Face"];
+
+        loopingThroughNames(names_list);
+
+
+    </script>
+
+</body>
+</html>

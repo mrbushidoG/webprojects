@@ -1,0 +1,9 @@
+p {
+    font-size: 30px;
+    color: red;
+}
+
+.specific {
+    font-size: 30p;
+    color: blue
+}

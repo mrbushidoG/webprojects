@@ -5,47 +5,451 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Abdel Magid Ahmed the Cadillac Lover</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Online Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        nav {
+            display: flex;
+            background-color: #200e3d;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        body {
+            background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+            font-family: "Work Sans", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "Days One", sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            list-style: none;
+        }
+
+        nav ul li a {
+            font-size: 16px;
+            padding: 0 15px;
+            color: white;
+            transition: 0.2s;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            transition: 0.2;
+            color: #52c5ff;
+
+
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            
+        }
+
+        .hero {
+            padding: 130px;
+        }
+
+        .hero img {
+            border-style: none;
+            border-radius: 50%;
+            margin: 0 auto;
+            max-width: 440px;
+            display: block;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 24px;
+            margin: 30px 0px 100px;
+        }
+
+        .aboutme {
+            width: 90%;
+            max-width: 1100px;
+            height: auto;
+            background-color: white;
+            text-align: center;
+            padding: 40px 50px 70px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 0px rgb(0 0 0 /40%), -10px -10px 0px rgb(255 114 114 /88%);
+        }
+
+        .aboutme-section {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+
+        .aboutme-image {
+            height: 450px;
+            width: 400px;
+            background-image: url("img/cadillac-celestiq.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .aboutme-text {
+            height: auto;
+            width: 40%;
+            margin-left: 40px;
+            text-align: left;
+        }
+
+        #projects {
+            padding: 5px;
+            margin: 5%;
+            width: 90%;
+            height: auto;
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+
+        #projects h2 {
+            color: white;
+        }
+
+        .earth-project {
+            width: 400px;
+            height: 400px;
+            background: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url('img/The_Blue_Marble_\(remastered\).jpg');
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text {
+            position: absolute;
+            height: 65px;
+            width: 90%;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            transition: 0.2s;
+            padding: 20px;
+
+        }
+
+        .text:hover {
+            height: 175px;
+            transition: 0.3s;
+        }
+
+        .text h3 {
+            margin-top: 3px;
+        }
+
+        .content {
+            color: black;
+        }
+
+        .button {
+            border: 5px solid lightblue;
+            border-radius: 10px;
+            width: 160px;
+            margin-bottom: 100px;
+            margin-left: 10px;
+        }
+
+        .bbc-project {
+            width: 400px;
+            height: 400px;
+            background: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url('img/bbcnews.svg');
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text {
+            position: absolute;
+            height: 65px;
+            width: 90%;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            transition: 0.2s;
+            padding: 20px;
+
+        }
+
+        .text:hover {
+            height: 175px;
+            transition: 0.3s;
+        }
+
+        .text h3 {
+            margin-top: 3px;
+        }
+
+        .content {
+            color: black;
+        }
+
+        .button {
+            border: 5px solid lightblue;
+            border-radius: 10px;
+            width: 160px;
+            margin-bottom: 100px;
+            margin-left: 10px;
+        }
+
+        .contact {
+            width: 100%;
+            height: auto;
+            padding: 75px 0 50px 0;
+            text-align: center;
+            background-color: rgb(3, 3, 3, 45%);
+        }
+
+        .contact p {
+            margin-bottom: 50px;
+        }
+
+        .contact h2,
+        .contact p {
+            color: white;
+        }
+
+        .contact-form {
+            width: 100%;
+            display: flex;
+            text-align: left;
+            max-width: 1100px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 9px;
+        }
+
+        .message {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+
+        .message textarea {
+            border-radius: 5px;
+            border: 0px;
+        }
+
+        .contact-details {
+            flex: 1;
+            margin-right: 60px;
+        }
+
+        .contact-details input {
+            width: 89%;
+            border-radius: 5px;
+            border: 0px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+
+        .message button {
+            color: #1d3d5f;
+            border: 0;
+            border-radius: 5px;
+            background: lightblue;
+            width: 140px;
+            height: 40px;
+            margin-top: 40px;
+            margin-left: auto;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transform: 0.3s;
+
+        }
+
+        .message button:hover {
+            background: black;
+            color: white;
+            transition: 0.2s;
+        }
+
+        footer {
+            height: 90px;
+            background-color: #1f2027;
+
+        }
+
+        footer .container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .social-media {
+            font-size: 200%;
+            width: auto;
+            margin-left: auto;
+        }
+
+        .social-media a i{
+            color: white;
+            transition: 0.2s;
+        }
+
+        .social-media a i:hover {
+            color: lightblue;
+            transition: 0.2s;
+        }
+
+        .copyright {
+            color:white;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="navigation">
-        <p><a href="#">About Me</a></p>
-        <p><a href="#">Projects</a></p>
-        <p><a href="#">Contact Me</a></p>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
 
-    <div class="profile-image">
-        <img src="img/cadillac-celestiq.jpeg" alt="">
-        <h3>This is a website dedicated for Cadillac Lovers. If you are interesed plesae bring your car and join us</h3>
-    </div>
-
-    <div class="profile-box">
-        <div class="profile-text">
-            <h3 class="about-me">About Me</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ad saepe reprehenderit at illum
-                porro quos, perspiciatis pariatur dolorem earum sapiente, magni similique eveniet, repudiandae itaque ut
-                veritatis quae quo.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam autem, repellendus alias distinctio
-                labore at possimus perferendis quae! Rerum explicabo excepturi saepe blanditiis rem asperiores ipsum
-                consequuntur culpa quidem illo.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora deserunt cupiditate alias autem iste
-                corrupti nesciunt, in odio eveniet! Beatae ad odio eum incidunt, suscipit sapiente tempora dolores
-                facilis! Eaque!</p>
+    <section class="hero">
+        <div class="container">
+            <img src="img/1969-cadillac-eldorado.jpg" alt="" srcset="">
+            <h1>This is a website for cadillac lovers, If you have one please come and join us</h1>
         </div>
-    </div>
+    </section>
 
-    <h1>to be filled</h1>
-    <h1>to be filled</h1>
-    <h1>to be filled</h1>
-    <h1>to be filled</h1>
-    <h1>to be filled</h1>
-    <h1>to be filled</h1>
+    <section id="aboutme" class="aboutme">
+        <h2>About Me</h2>
+        <div class="aboutme-section">
+            <div class="img">
+                <div class="aboutme-image">
+
+                </div>
+            </div>
+            <div class="aboutme-text">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto officiis provident
+                    reprehenderit, laudantium accusamus optio maxime accusantium veritatis sunt vel veniam laborum autem
+                    ipsa? Et doloremque officiis omnis sunt explicabo.</p>
+                <p>Excepturi quia doloribus dolore autem eius ullam ipsam iure officia? Consequuntur, perspiciatis a
+                    exercitationem molestiae consequatur harum ipsam excepturi et, voluptates error quisquam, atque eum
+                    accusamus? Nulla error officia voluptatum!
+                    Fugit amet error tempora saepe asperiores tenetur quidem atque necessitatibus accusantium, repellat
+                    temporibus, eveniet animi molestias aut ducimus debitis in, quisquam dolor minima doloremque quis
+                    praesentium iusto qui. Neque, voluptatum!
+                </p>
+                <p>I have working knowledge of Azure platform and I have done several projects. Also, I have basic
+                    knowledge in Python, PHP,and Java click hre to check my projects</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="project">
+            <h2>Projects</h2>
+            <div class="projects">
+
+                <div class="earth-project">
+                    <div class="text">
+                        <h3 class="project-name">Earth Facts</h3>
+                        <div class="content">
+                            <p>A HTML project about some facts about teh earth</p>
+                        </div>
+                        <a href="../1-html/htmlproject.html" class="button">View Project</a>
+                    </div>
+                </div>
+
+                <div class="bbc-project">
+                    <div class="text">
+                        <h3 class="project-name">BBC News Clone</h3>
+                        <div class="content">
+                            <p>Old project I used to have back in 2015. It was awesome</p>
+                        </div>
+                        <a href="../1-html/htmlproject.html" class="button">View Project</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contactme" class="contact">
+        <h2>Contact</h2>
+        <p>I would love to hear from you</p>
+        <form action="" class="contact-form">
+            <div class="contact-details">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="What it is about">
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" placeholder="Enter your Email">
+
+
+            </div>
+
+            <div class="message">
+                <label for="msg">Message</label>
+                <textarea name="" id="msg" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+
+
+        </form>
+    </section>
+
+    <footer class="container">
+        <div class="copyright">
+            This site &copy; 2023 Abdel Magid Ahmed
+        </div>
+        <div class="social-media">
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-reddit"></i></a>
+            
+        </div>
+    </footer>
 
 </body>
 

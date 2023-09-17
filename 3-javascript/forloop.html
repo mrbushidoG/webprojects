@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        p {
+            border: 1px solid red;
+            width: 134px;
+            text-align: center;
+        }
+    </style>
+    <title>For Loop JS</title>
+</head>
+<body>
+    <div id="tweetDiv"></div>
+
+    <script>
+        var arrayTweets = ["This is so good", "Is it really that good","let do it","We can make it"]
+        var showTweets = "";
+
+        for (let i = 0; i < arrayTweets.length; i++) {
+            
+            showTweets = showTweets + '<p>' + arrayTweets[i] + '</p>';
+            
+        }
+
+        document.getElementById("tweetDiv").innerHTML = showTweets;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JS</title>
+</head>
+
+<body>
+    <script>
+
+        var myArray = new Array();
+
+        myArray[0] = "pizza";
+        myArray[1] = "burger";
+
+        myArray.push("Ninja");
+        myArray.push("Tokyo");
+        myArray.push("Italy");
+
+        myArray.splice(0,4,"Ryu","Ahmed","kratos","Garan no Gabimaru")
+        console.log(myArray)
+
+        // function create(htmlStr) {
+        //     var frag = document.createDocumentFragment(),
+        //         temp = document.createElement('table');
+        //     temp.innerHTML = htmlStr;
+        //     while (temp.firstChild) {
+        //         frag.appendChild(temp.firstChild);
+        //     }
+        //     return frag
+
+        // }
+
+        // var fragment = create('<table><tr><th>Test table</th><th>Test table</th></tr><tr><td>row number</td></tr></table>');
+        // document.body.insertBefore(fragment,document.body.childNodes[0]);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="styleText">Text to be styled</h1>
+
+    <button id="styleButton">Style text</button>
+
+    <script type="text/javascript">
+        color_list = ["red","grey","purple","#fefae0","#bde0fe","#90be6d","#f72585","#7b2cbf","#ffa200"];
+        
+        
+
+        // Changing the value of <p>
+        // // add a button to change the <p> element value
+        // document.getElementById("ibutton").onclick = function () {
+        //     //document.getElementById("text").innerHTML = "the button is working YO!!!!!"
+        //     alert("Button clicked");
+        // };
+
+        // document.getElementById("second-button").onclick = function() {
+        //     //document.getElementById("second-paragraph").innerHTML = "I think " + document.getElementById("second-paragraph").innerHTML + " awesome";
+        //     document.getElementById("showheader").innerHTML = "<h1>Just testing</h1>";
+        // }
+
+        document.getElementById("styleButton").onclick = function(){
+            console.log(color_list.length)
+            rand_number = Math.round(Math.abs(Math.random()*(color_list.length)))-1
+            console.log(Math.abs(Math.round(rand_number)))
+            document.getElementById("styleText").style.color = color_list[rand_number];
+            
+        }
+
+
+    </script>
+</body>
+
+</html>
