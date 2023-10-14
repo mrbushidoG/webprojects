@@ -10,23 +10,13 @@
 </head>
 
 <body>
-    <p>Hi There from jQuery</p>
-
-    <!-- <div class="green-circle"></div> -->
-    <!-- <div class="red-square"></div> -->
-    <!-- <div class="red-square"></div> -->
-    <button id="button-to-click">Click Me</button>
-    <button id="second-button-to-click">Click to add a second paragraph</button>
-    <p class="add-text-here"></p>
-    <p class="add-text-second"></p>
+    <h1>Hi There from jQuery</h1>
+    
+    <div class="square red-square"></div>
 
     <script type="text/javascript">
-        $("#button-to-click").click(function () {
-            $(".add-text-here").text("Just adding stuff")
-        });
-        $("#second-button-to-click").click(function(){
-            $(".add-text-second").text("Just added a second text")
-        })
+        $("div").height(1000)
+
     </script>
 </body>
 

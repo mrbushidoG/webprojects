@@ -7,9 +7,49 @@
 
 }
 
-.red-square {
-    background-color: red;
+.square {
     width: 150px;
     height: 150px;
     margin-bottom: 15px
+}
+
+.red-square{
+    background-color: red;
+    margin-bottom: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.green-square{
+    background-color: green;
+}
+
+.fadein-text {
+    color: red;
+}
+
+.parent{
+    width: 400px;
+    height: 400px;
+}
+
+#draggable {
+    width: 250px;
+    height: 250px;
+    border: solid 10px black;
+
+}
+
+.resize-me {
+    width: 250px;
+    height: 250px;
+    border: black 1px solid;
+}
+
+#accordion {
+    width:450px;
+}
+#sortable {
+    width:450px;
 }

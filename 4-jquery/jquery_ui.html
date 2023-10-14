@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+    <title>jQuery UI</title>
+</head>
+
+<body>
+
+    <!-- <div id="accordion">
+        <h3>Section Number 1</h3>
+        <p>This text belong to section number 1</p>
+        <h3>Section Number 2</h3>
+        <p>This text belong to section number 2</p>
+        <h3>Section Number 3</h3>
+        <p>This text belong to section number 3</p>
+        <h3>Section Number 4</h3>
+        <p>This text belong to section number 4</p>
+    </div> -->
+
+    <ul id="sortable">
+        <li class="ui-state-default">item 1</li>
+        <li class="ui-state-default">item 2</li>
+        <li class="ui-state-default">item 3</li>
+        <li class="ui-state-default">item 4</li>
+        <li class="ui-state-default">item 5</li>
+    </ul>
+
+
+    <script>
+
+        // $(function () {
+        //     var icons = {
+        //         header: "ui-icon-circle-arrow-e",
+        //         activeHeader: "ui-icon-circle-arrow-s"
+        //     };
+        //     $("#accordion").accordion({
+        //             icons: icons
+        //         });
+        //     })
+        $(function() {
+            $("#sortable").sortable();
+        })
+
+
+    </script>
+</body>
+
+</html>

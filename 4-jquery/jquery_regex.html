@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.0.min.js"></script>
+    <title>JQuery Regex</title>
+</head>
+<body>
+
+    <p id="regex-result"></p>
+    
+    <script>
+        let regex = /e/ig
+        let test_string = "Regex is really good and great and its the number 1 tool for validation"
+        let result = test_string.match(regex)
+
+        $("#regex-result").text(result)
+    </script>
+
+</body>
+</html>
