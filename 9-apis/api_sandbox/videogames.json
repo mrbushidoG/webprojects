@@ -1,0 +1,27 @@
+[
+    {
+        "name":"God Of War",
+        "genre": "Action hack and slash",
+        "rate": "9.8/10",
+        "studio": "Santa Monica"
+    },
+    {
+        "name": "Final Fantasy VII",
+        "genre": "RPG",
+        "rate": "10/10",
+        "studio": "Square Enix"
+    },
+    {
+        "name": "Ace Combat 7: Unknown Skies",
+        "genre": "Flight Simulator",
+        "rate": "10/10",
+        "studio": "Project Aces"
+    },
+    {
+        "name": "Armored Core: Fire Of The Rubicorn",
+        "genre": "Mecha, Action",
+        "rate": "10/10",
+        "studio": "From Software"
+    }
+
+]

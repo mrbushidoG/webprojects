@@ -93,7 +93,7 @@ if (array_key_exists("submit", $_POST)) {
 
 
 <?php include('header.php'); ?>
-    <div class="container">
+    <div class="container" id="homePageContainer">
 
         <h1>Secret Diary</h1>
 
